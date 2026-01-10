@@ -1,5 +1,5 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
+﻿using System;
+using Microsoft.VisualStudio.TestTools.UnitTesting
 using TestProject.Utils;
 
 namespace TestProject.Tests
@@ -16,7 +16,8 @@ namespace TestProject.Tests
         [TestMethod]
         public void Test_AutomationIdButton()
         {
-            throw new NotImplementedException();
+            var button = mainAppWindow.FindFirstDescendant(cf => cf.ByAutomationId("AutoBtn"));
+            button.Click();
         }
 
         [TestCleanup]

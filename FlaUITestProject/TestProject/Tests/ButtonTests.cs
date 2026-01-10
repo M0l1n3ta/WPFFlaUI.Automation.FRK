@@ -1,5 +1,5 @@
 ﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using TestProject.Utils;
 
 namespace TestProject.Tests

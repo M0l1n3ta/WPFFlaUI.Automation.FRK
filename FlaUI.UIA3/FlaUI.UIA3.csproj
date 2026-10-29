@@ -19,7 +19,7 @@
     <PackageProjectUrl>https://github.com/FlaUI/FlaUI</PackageProjectUrl>
     <PackageIcon>FlaUI.png</PackageIcon>
     <RepositoryUrl>https://github.com/FlaUI/FlaUI</RepositoryUrl>
-    <PackageTags>UI Automation UIA2 UIA3 UIA System.Windows.Automation</PackageTags>
+    <PackageTags>UI Automation UIA3 </PackageTags>
     <IncludeSource>True</IncludeSource>
     <IncludeSymbols>True</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>

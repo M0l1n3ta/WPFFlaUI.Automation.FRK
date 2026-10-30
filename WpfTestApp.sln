@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.14.36804.6
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp", "WpfTestApp\TestApplication\WpfApp.csproj", "{2B8605E6-6E56-4A04-9902-0C51611322BC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp", "WpfTestApp\WpfApp.csproj", "{2B8605E6-6E56-4A04-9902-0C51611322BC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlaUITest", "FlaUITest\FlaUITest.csproj", "{82567CD7-C3FE-4680-865F-8EE33CAA77BF}"
 EndProject

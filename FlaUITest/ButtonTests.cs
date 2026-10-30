@@ -1,4 +1,4 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using FlaUI.Core.AutomationElements;
 
 namespace FlaUITest;
 
@@ -14,8 +14,15 @@ public class ButtonTests : TestBase, ITest
     [TestMethod]
     public void Test_AutomationIdButton()
     {
-        var button = mainAppWindow.FindFirstDescendant(cf => cf.ByAutomationId("AutoBtn"));
-        button!.Click();
+        var inputBox = mainAppWindow.FindFirstDescendant(cf => cf.ByAutomationId("txtName")).AsTextBox();
+        inputBox!.Enter("Test Name");
+
+        var button = mainAppWindow.FindFirstDescendant(cf => cf.ByAutomationId("btnSubmit")).AsButton();
+        Assert.AreEqual("Press me", button!.Name, "Button text is incorrect");
+        button.Click();
+
+        var resultLabel = mainAppWindow.FindFirstDescendant(cf => cf.ByAutomationId("ResultWindow")).AsLabel();
+        Assert.AreEqual("Input was Test Name", resultLabel!.Text, "Result text is incorrect");
     }
 
     [TestCleanup]
